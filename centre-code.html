@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying content in center of page</title>
+    <style type="text/css">
+
+        body{
+            border: 3px solid;
+
+            background-image: url(public/images/sachin1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        main{
+            border: 1px solid red;
+        }
+
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .subtitle{
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">HTML</div>
+        <div class="subtitle">It is a Markup Language</div>
+    </main>
+</body>
+</html>
