@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Output/</title>
 
     <style>
-        .code{
+        .code {
             border: 1px dotted;
             width: 500px;
+            color: blue;
         }
 
+        var{
+            color: red;
+        }
     </style>
 </head>
+
 <body>
-    Welcome to <b>PWIOI</b>   
-    <br/> <!--Same working as of br -->
+    Welcome to <b>PWIOI</b>
+    <br /> <!--Same working as of br -->
     Welcome to <b>Bengaluru</b> offline Campus
-    
+
     <hr>
 
     Welcome to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PWIOI
@@ -42,5 +48,27 @@
             printf("Hello World");
         }
     </pre>
+
+    <hr>
+
+    <div>
+        <samp>Area of a Reactangle</samp>
+    </div>
+
+    <code>
+    <pre class="code">
+        #include&lt;stdio.h&gt;
+
+        int main()
+        {
+            int <var>length</var>=10;
+            int <var>breadth</var>=20;
+            int <var>area</var>=length*breadth;
+            printf("Area=%d",<var>area</var>);
+        }
+    </pre>
+</code>
+
 </body>
+
 </html>
