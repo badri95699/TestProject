@@ -1,0 +1,114 @@
+Note: We can make content sticky on a webpage using css property 
+	dt{
+		position : sticky;
+		top : 0;
+	}
+
+Field Set and Legends
+- Field set is container with frame.
+- Legend puts a caption for field set.
+- It is used for creating a group of elements in a  page.
+
+Syntax:
+<fieldset>
+	<legend> Title </legend>
+	Your content…
+</fieldset>
+
+In Css we can set shadow to any container by using box-shadow
+box shadow will have 4 values 
+{
+	box-shadow : length breadth blur color;
+}
+
+The unit of horizontal vertical blur is "pixels".
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style type="text/css">
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        dt{
+            background-color: black;color:white;
+            margin-bottom: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        dd{
+            margin-bottom: 10px;
+            background-color: gray;color:black;
+            width: 400px;
+            padding: 10px;
+        }
+        fieldset{
+            background-image: url(public/images/sachin.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 400px;
+            margin: 25px;
+            margin-bottom: 35px;
+            border-radius: 25px;
+
+            /* box shadow */
+            box-shadow: 5px 5px 10px green;
+        }
+        legend{
+            background-color: black;
+            color:white;
+            border-radius: 25px;
+            text-align: center;
+            padding: 5px;
+
+            /* box shadow */
+            box-shadow: 10px 5px 10px orange;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+          <legend> Person Details</legend>
+          <dl>
+                <dt>FirstName</dt>
+                <dd>
+                    SomeName
+                </dd>
+
+                <dt>Lastname</dt>
+                <dd> 
+                    SomeName
+                </dd>
+
+                <dt>Age</dt>
+                <dd>
+                    SomeAge
+                </dd>
+          </dl>
+    </fieldset>
+
+    <fieldset>
+          <legend> Contact Details</legend>
+          <dl>
+                <dt>City</dt>
+                <dd>
+                    SomeCity
+                </dd>
+
+                <dt>State</dt>
+                <dd> 
+                    SomeState
+                </dd>
+
+                <dt>PostalCode</dt>
+                <dd>
+                    SomePostalCode
+                </dd>
+          </dl>
+    </fieldset>
+</body>
+</html>
