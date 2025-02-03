@@ -9,6 +9,17 @@
         .check{
             list-style-type: none; 
         }
+
+        .column{
+            columns: 2;
+            padding-top: 5px;
+        }
+        
+        .inline{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +57,29 @@
                 <li>Node.js</li>
                 <li>MongoDB</li>
             </ol>
+        </li>
+    </ol>
+
+    <hr>
+
+    <ol type="I">
+        <li>
+            Question 1
+            <ol class="column" type="a">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ol>   
+        </li>
+        <li>
+            Question 2
+            <ol class="inline" type="a">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ol>  
         </li>
     </ol>
 
