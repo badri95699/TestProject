@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+            margin-top: 10px;
+
+        }
+        .titles{
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .menu{
+            margin-left: 10px;
+            font-family: arial;
+        }
+
+        .subtitles , .iconss{
+            margin-top: 10px;
+
+        }
+        .items{
+            background-color: red;
+            width: 20px;
+            height: 19px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 19px;
+        }
+
+        section{
+            margin: 25px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .bi-lightning-charge-fill{
+            color: goldenrod;
+        }
+
+        marquee{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+        }
+
+        footer{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            
+            margin-top: 20px;
+            padding: 20px;
+
+            background-color: rgb(31 31 31);
+            color: white;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .subtitle span{
+            display: block;
+        }
+
+        .title{
+            text-transform: uppercase;     /*IMP*/
+            margin-bottom: 17px;
+            font-weight: 700;
+            font-size: small;
+        }
+
+        .brand{
+            text-transform: capitalize;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .subtitle span{
+            color: #bababa;
+            padding-bottom: 5px;
+        }
+
+        .icons span{
+            color: #bababa;
+            padding-left: 5px;
+        }
+
+        .content{
+            height: 100vh;
+            background-color: #fff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header Section -->
+        <div class="titles">
+            <span>Shopper.</span>
+        </div>
+        <div class="subtitles">
+            <span class="menu">Home</span>
+            <span class="menu">Catalog</span>
+            <span class="menu">Shop</span>
+            <span class="menu">Pages</span>
+            <span class="menu">Blog</span>
+            <span class="menu">Docs</span>
+        </div>
+        <div class="iconss">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart3">
+                <span class="items"> 2</span></span>
+        </div>
+    </header>
+
+
+    <!-- Section -->
+
+    <section>
+        <div>
+            <marquee>
+                <span class="bi bi-lightning-charge-fill"></span>
+                <span> Happy Holiday deal on everything </span>
+                <span class="bi bi-lightning-charge-fill"></span>
+            </marquee>
+        </div>
+    </section>
+
+    <section class="content">
+
+    </section>
+
+    <footer>
+        <div>
+            <div class="title brand">Shopper.</div>
+            <div class="icons">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-medium"></span>
+            </div>
+        </div>
+        <div>
+            <div class="title">Support</div>
+            <div class="subtitle">
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+        </div>
+        <div>
+            <div class="title">Shop</div>
+            <div class="subtitle">
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kids' Shopping</span>
+                <span>Discounts</span>
+            </div>
+        </div>
+        <div>
+            <div class="title">Company</div>
+            <div class="subtitle">
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+        </div>
+        <div>
+            <div class="title">Contact</div>
+            <div class="subtitle">
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
