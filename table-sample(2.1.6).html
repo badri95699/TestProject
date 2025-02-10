@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Document</title>
+
     <style>
         table{
             border: 5px solid black;
-            border-collapse: collapse;
+            /* border-collapse: collapse; */
             width: 100%;
         }
         th,td{
@@ -22,13 +23,11 @@
     </style>
 </head>
 <body>
-    <!-- <table frame="box" rules="all"> -->
-        <!-- <table border="20" frame="void"> -->
-            <table>
+    <table cellspacing="20" cellpadding="10">
         <caption>Cricketer Details</caption>
         <thead>
             <tr>
-                <th>Name</th>
+                <th width="600">Name</th>
                 <th>Age</th>
                 <th colspan="2">Team</th>
             </tr>
@@ -45,7 +44,7 @@
                 <td>Rohit</td>
                 <td>36</td>
             </tr>
-            <tr>
+            <tr height="300">
                 <td>Kohli</td>
                 <td>34</td>
                 <td>RCB</td>
