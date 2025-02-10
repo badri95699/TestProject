@@ -4,8 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95vw;
+            margin: auto;
+            margin-top: 8px;
+            /* border: 1px solid gray; */
+            position: sticky;
+            top: 0px;
+
+        }
+        .bi-youtube{
+            color: red;
+        }
+        .search-bar{
+            display: inline-block;
+            width: 200px;
+            border: 1px solid gray;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 8px;
+        }
+        .bi-search{
+            border: 1px solid gray;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 8px;
+            margin-left: -4px;
+        }
+        .bi-mic-fill{
+            border: 1px solid gray;
+            padding: 8px;
+            border-radius: 20px;
+        }
+        .header-3rd-section{
+            border: 1px solid gray;
+            padding: 8px;
+            border-radius: 20px;
+        }
+        .gmail{
+            display: inline-block;
+            background-color: rgb(161, 68, 161);
+            padding: 7px;
+            width: 16px;
+            height: 17px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        header div span{
+            margin: 1px;
+        }
+        .main-body{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        .subscribe-button{
+            border: 1px solid gray;
+            padding: 6px;
+            width: 115px;
+            border-radius: 20px;
+            float: left;
+        }
+        .channel-logo{
+            float: left;
+            border-radius: 90px;
+        }
+        .iframe-section{
+            clear: both;
+        }
+
+    </style>
 </head>
 <body>
+    <header>
+        <div>
+            <span class="bi bi-list"></span>
+            <span>
+                <span class="bi bi-youtube"></span>
+                <span>Youtube</span>
+            </span>
+        </div>
+        <div>
+            <span class="search-bar">Search</span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div>
+            <span class="header-3rd-section">
+                <span class="bi bi-plus-lg"></span>
+                <span>Create</span>
+            </span>
+            <span class="bi bi-bell"></span>
+            <span class="gmail">K</span>
+        </div>
+    </header>
+
+    <section class="main-body">
+        <nav>
+
+        </nav>
     
+        <section>
+            <div>
+                <img src="public/images/pwioi-yt-banner.jpg" width="1045px">
+            </div>
+            <div>
+                <img src="public/images/pwioi-yt-logo.jpg" class="channel-logo">
+                <div>PW Institute of Innovation</div>
+                <div>
+                    <span>@PW-IOI
+                    </span>
+                    <span>•
+                        8.04K subscribers
+                        •
+                        253 videos</span>
+                </div>
+                <div>At PW Institute of Innovation, we aim to integrate practical learning with academic know...more</div>
+                <div>
+                    <a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqblZ3Tm40czI0ZUFaYjNWRFZ4cW1nLUJDQUNWZ3xBQ3Jtc0tsdk1yUExoamtCWUt2YXVGbUJyWlJNemd2UW9QVHJJVWJ6UUJ2LVpCaVJqeGYxRFhyQVNxSnpKZmFtb0JaUkN1bWRVMndVOWdlQV9fWGRURFl3VW5WZnUtZFI4SUhYQjAwU0k5SkVaV205WEE2TElOUQ&q=https%3A%2F%2Fpwioi.com%2F%3Futm_source%3DYoutube%26utm_medium%3DSocial%26utm_campaign%3DOrganic" target="_blank">pwioi.com/?utm_source=Youtube&utm_medium=Social&utm_campaign=Org...</a>
+                </div>
+                <div class="subscribe-button">
+                    <span class="bi bi-bell"></span>
+                    <span>Subscribed</span>
+                    <span class="bi bi-chevron-down"></span>
+                </div>
+            </div>
+
+            <div class="iframe-section">
+                <span>Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Playlists</span>
+                <span>Posts</span>
+                <span class="bi bi-search"></span>
+            </div>
+
+            <hr>
+
+            <div>Videos</div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6HnLOTHufPY?si=Rrwd1D8kvDYrGE0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+
+            
+        </section>
+    </section>
 </body>
 </html>
