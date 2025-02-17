@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: none;
+        }
+        span{
+            color: red;
+        }
+        .terms:checked+span{
+            color: green;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dt>Terms and Conditions Please Read</dt>
+        <dd>
+            <textarea name="" id="" cols="20" rows="5" readonly>Terms and Condition</textarea>
+        </dd>
+        <dd>
+            <input type="checkbox" name="" id="" class="terms">
+            <span>Accept</span>
+            <br><br>
+            <button>Accept</button>
+        </dd>
+    </form>
+</body>
+</html>
