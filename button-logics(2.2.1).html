@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <form action="">
+
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="txtUsername">
+            </dd>
+            <br>
+            <dt>Password</dt>
+            <dd>
+                <input type="password" name="txtPwd">
+            </dd>
+        </dl>
+        <br>
+
+        <!-- HTML 5 generic & non-generic buttons -->
+        <button> <span class="bi bi-person-fill"></span>submit</button>
+        <button type="reset"> <span class="bi bi-arrow-clockwise"></span>reset</button>
+        <button type="button" onclick="javascript:window.print()"> <span
+                class="bi bi-printer-fill"></span>print</button>
+
+        <!-- HTML 4 generic & non-generic buttons -->
+        <input type="button" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="print" onclick="javascript:window.print()">
+
+    </form>
+</body>
+
+</html>
