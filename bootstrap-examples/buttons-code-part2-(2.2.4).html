@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <dl>
+        <dt>Group buttons</dt>
+        <dd>
+            <div class="btn-group">
+            <button class="btn btn-success">Insert</button>
+            <button class="btn btn-warning">Update</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+        </dd>
+        <dt>Logo based buttons</dt>
+        <div class="btn-group-vertical">
+            <button class="bi bi-facebook btn btn-success"></button>
+            <button class="bi bi-instagram btn btn-warning"></button>
+            <button class="bi bi-twitter btn btn-danger"></button>
+        </div>
+    </dl>
+
+        <div class="btn-toolbar justify-content-between m-3 btn bg-danger p-1">
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger">Home</button>
+              <button type="button" class="btn btn-danger">Shop</button>
+              <button type="button" class="btn btn-danger">Contact</button>
+              <button type="button" class="btn btn-danger">Blog</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger bi bi-search"></button>
+              <button type="button" class="btn btn-danger bi bi-heart"></button>
+              <button type="button" class="btn btn-danger bi bi-person"></button>
+            </div>
+          </div>
+
+          <dl>
+            <dt>Password</dt>
+            <dd class="input-group">
+                <span class="bi bi-key-fill input-group-text bg-secondary-subtle"></span>
+                <input type="password" name="txtPwd">
+                <span class="bi bi-check-square bg-success input-group-text text-white"></span>
+            </dd>
+            <dt>Price</dt>
+            <dd class="input-group">
+                <span class="bi bi-currency-rupee input-group-text bg-black text-white"></span>
+                <input type="text" name="txtPrice">
+                <span class="bg-black input-group-text text-white">.00</span>
+            </dd>
+          </dl>
+</body>
+</html>
