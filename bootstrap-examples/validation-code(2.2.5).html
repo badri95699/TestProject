@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        input:required{
+            border: 1px solid red;
+        }
+        input:required+span{
+            color: red;
+        }
+        input:required ~ div{
+            color: red;
+        }
+        input:valid{
+            border: 1px solid black
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:valid ~ div{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <form action="">
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                    <input type="text" name="txtUsername" required>
+                <span>*</span>
+                <div>Username is required</div>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                    <input type="password" name="txtPwd" required>
+                <span>*</span>
+                <div>
+                    Password is required
+                </div>
+            </dd>
+            <dt>Age</dt>
+            <dd>
+                <input type="text" name="txtAge">
+            </dd>
+        </dl>
+        <button class="btn btn-primary">Login User</button>
+    </form>
+
+</body>
+
+</html>

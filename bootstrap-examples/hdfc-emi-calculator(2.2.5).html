@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid"> 
+    <div class="h3 mt-3"> 
+        EMI Calculator
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            Amount you need
+            <input type="text" name="txtAmount" value="&#8377; 50,000" size="7">
+        </div>
+        <div class="col">
+            for <input type="text" name="txtYears" value="5" size="3"> years
+        </div>
+        <div class="col">
+            Interest rate
+            <input type="text" name="txtRate" value="10.5" size="4"> %
+        </div>
+    </div>   
+
+    <!-- second row -->
+    <div class="row mt-3">
+        <div class="col">
+            <input type="range" name="amountRange" id="" class="form-range">
+        </div>
+        <div class="col">
+            <input type="range" name="yearsRange" id="" class="form-range">
+        </div>
+        <div class="col">
+            <input type="range" name="interestRange" id="" class="form-range">
+        </div>
+    </div>
+
+    <!-- third row -->
+
+    <div class="row">
+        <div class="col">
+            <span>&#8377;50,000</span>
+            <span class="float-end">&#8377;40,00,000</span>
+        </div>
+        <div class="col">
+            <span>1 Year</span>
+            <span class="float-end">5 Year</span>
+        </div>
+        <div class="col">
+            <span>10.5%</span>
+            <span class="float-end">21%</span>
+        </div>
+    </div>
+
+    <!-- fourth row -->
+
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary float-end mt-3">CALCULATE</button>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
