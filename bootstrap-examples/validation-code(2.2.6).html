@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        input:required{
+            border: 1px solid red;
+        }
+        input:required+span{
+            color: red;
+        }
+        input:required ~ div{
+            color: red;
+        }
+        input:valid{
+            border: 1px solid black
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:valid ~ div{
+            display: none;
+        }
+        label{
+            color: red;
+        }
+        .accept~button{
+            display: none;
+        }
+        .accept:checked~label{
+            color: green;
+        }
+        .accept:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <form action="">
+        <dl class="w-25">
+            <dt>Username</dt>
+            <dd>
+                    <input type="text" name="txtUsername" required>
+                <span>*</span>
+                <div>Username is required</div>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                    <input type="password" name="txtPwd" required>
+                <span>*</span>
+                <div>
+                    Password is required
+                </div>
+            </dd>
+            <dt>Age</dt>
+            <dd>
+                <input type="text" name="txtAge">
+            </dd>
+            <dt>Mobile</dt>
+            <dd>
+                <input type="text" name="txtMobile" required pattern="\+91 [6-9]\d{9}">
+                <span>*</span>
+                <div>
+                    +91 - 10 digits required
+                </div>
+            </dd>
+            <dt>TextArea</dt>
+            <dd>
+                <textarea name="" id="" class="form-control" disabled rows="4">
+                    Our terms and Services
+                </textarea>
+                <input type="checkbox" name="checkTerms" id="checkTerms" class="form-check-input accept">
+                <label for="checkTerms" class="form-label">I accept</label><br>
+                <button class="btn btn-primary">Login User</button>
+            </dd>
+        </dl>
+    </form>
+
+</body>
+
+</html>
