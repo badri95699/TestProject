@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        button{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+
+    <button class="btn btn-primary m-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">
+        Toggle width collapse
+    </button>
+
+    <div class="collapse" id="collapseWidthExample">
+        <div class="border p-1" style="width: 300px;">
+            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>Frequently Asked Questions</h3>
+    <button class="btn btn-secondary w-100 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+        <span class="float-start">What is Netflix?</span>
+        <span class="bi bi-plus-lg float-end"></span>
+    </button>
+    <div class="collapse" id="faq1">
+        <p class="bg-dark text-white rounded mt-1 p-3">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices.
+        </p>
+    </div>
+    <button class="btn btn-secondary w-100 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+        <span class="float-start">How much does Netflix cost?</span>
+        <span class="bi bi-plus-lg float-end"></span>
+    </button>
+    <div class="collapse" id="faq2">
+        <p class="bg-dark text-white rounded mt-1 p-3">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+        </p>
+    </div>
+    <button class="btn btn-secondary w-100 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+        <span class="float-start">Where can I watch?</span>
+        <span class="bi bi-plus-lg float-end"></span>
+    </button>
+    <div class="collapse" id="faq3">
+        <p class="bg-dark text-white rounded mt-1 p-3">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+        </p>
+    </div>
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
