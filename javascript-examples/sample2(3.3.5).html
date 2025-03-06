@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div name="imgDiv">
+        <img height="100" width="100" border="1" name="poster">
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>User Login</h2>
+            Username <input type="text" name="username"><br><br>
+            Password <input type="password" name="pwd"><br><br>
+            <input type="button" name="btnLogin">
+        </form>
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            Email <input type="text" name="email"><br><br>
+            <input type="button" name="btnRegister">
+        </form>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    // poster.src="/public/images/mobile.jpeg"; 
+    // frmLogin.btnLogin.value="Submit";
+    // frmRegister.btnRegister.value="Register";
+
+    //  document.getElementsByName("poster")[0].src="/public/images/mobile.jpeg";
+
+   arr= document.getElementsByName("poster");
+   arr[0].src="/public/images/mobile.jpeg";
+
+
+</script>
