@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+            function loadData(){
+                btn=document.querySelector("button");
+            console.log(btn);
+
+            // btn.addEventListener("click",function(){
+            //     alert("R U sure , u want to Delete ?")
+            // })
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("button").addEventListener("click", function () {
+                alert("Hey User,\nAre u sure , u want to delete ?")
+            })
+        })
+    </script>
+</head>
+
+<body onload="loadData()">
+
+    <button>
+        Delete Record
+    </button>
+</body>
+
+</html>
