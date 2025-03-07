@@ -10,6 +10,9 @@
     <div name="imgDiv">
         <img height="100" width="100" border="1" name="poster">
     </div>
+    <div name="imgDiv">
+        <img height="100" width="100" border="1" name="poster">
+    </div>
     <div>
         <form name="frmLogin">
             <h2>User Login</h2>
@@ -29,14 +32,15 @@
 </html>
 
 <script type="text/javascript">
-    // poster.src="/public/images/mobile.jpeg"; 
+    // poster[0].src="/public/images/mobile.jpeg"; 
     // frmLogin.btnLogin.value="Submit";
     // frmRegister.btnRegister.value="Register";
 
-    //  document.getElementsByName("poster")[0].src="/public/images/mobile.jpeg";
+    //  document.getElementsByName("poster")[1].src="/public/images/mobile.jpeg";
 
    arr= document.getElementsByName("poster");
-   arr[0].src="/public/images/mobile.jpeg";
+   console.log(arr);
+   arr[1].src="/public/images/mobile.jpeg";
 
 
 </script>

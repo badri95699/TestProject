@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p name="text">
+        Hello user
+    </p>
+    <div name="text">
+        Yo user
+    </div>
+    <p name="text">
+        Welcome user
+    </p>
+</body>
+</html>
+<script type="text/javascript">
+    // document.getElementsByName("text")[0].style.color="red";
+    var textArray = document.getElementsByName("text");
+    console.log(textArray);
+    // textArray[0].style.color="red";
+
+    for (let index = 0; index < textArray.length; index++) {
+        pElement=textArray[index];
+        pElement.style.color="red";
+        pElement.style.fontWeight="bold";
+        pElement.textContent="PWIOI";
+    }
+
+    // Using iterator to read the values of array
+
+    textArray.forEach(function(abc){
+        console.log(abc);
+        abc.textContent="Roshan";
+    })
+
+</script>
