@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function deleteRecord() {
+                flag = confirm("R u sure , u want to delete ?")
+
+                // if (flag == true) {
+                //     alert("Record deleted successfully !");
+                // } else {
+                //     alert("You pressed cancel button !");
+                // }
+
+                // if (flag == true) {
+                //     document.writeln("<h1 style='color:green;text-align:center'>Record deleted successfully !</h1>");
+                //     document.write("<a href='confirm-code(3.2.8).html'>Click here</a>")
+                // } else {
+                //     document.write("<h1 style='color:red;text-align:center'>You pressed cancel button !</h1>");
+                // }
+
+                if (flag == true) {
+                    // document.querySelector("h1").innerHTML = "<h3 style='color:green;text-align:center'>Record deleted successfully !</h3>";
+                    document.querySelector("h1").outerHTML = "<h3 style='color:green;text-align:center'>Record deleted successfully !</h3>";
+                    // document.querySelector("h1").textContent = "<h3 style='color:green;text-align:center'>Record deleted successfully !</h3>";
+                    // document.querySelector("h1").outerText = "<h3 style='color:green;text-align:center'>Record deleted successfully !</h3>";
+                } else {
+                    // document.querySelector("p").innerHTML = "<h3 style='color:red;text-align:center'>You pressed cancel button !</h3>";
+                    document.querySelector("p").outerHTML = "<h3 style='color:red;text-align:center'>You pressed cancel button !</h3>";
+                }
+
+            }
+    </script>
+</head>
+
+<body>
+    <button onclick="deleteRecord()">
+        Delete Record
+    </button>
+    <h1></h1>
+    <p></p>
+
+</body>
+
+</html>
