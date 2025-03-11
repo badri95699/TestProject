@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        firstNum = prompt("Enter the value");
+        secondNum = prompt("Enter the value");
+
+        condition1 = isNaN(firstNum);
+        console.log(condition1);
+        condition2 = isNaN(secondNum);
+        console.log(condition2);
+
+        if (condition1 || condition2) {
+            console.log("Enter number...");
+            
+        } else {
+            console.log(Number(firstNum) + Number(secondNum));
+        }
+    </script>
+</body>
+</html>
