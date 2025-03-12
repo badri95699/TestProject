@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script type="text/javascript">
+
+        // primitive string
+        str = "Sachin";
+        str[3] ='H';
+        console.log(str);
+        console.log(typeof str);
+        console.log(str.length);
+        console.log(str.toUpperCase());
+
+        // adding a new property (no use , as its not a object)
+        str.age = 51;
+        console.log(str);
+
+        // creating a string object [heap]
+        str2 = new String("dhoni");
+        console.log(str2);
+        console.log(typeof str2);
+        
+        str3 = str2.replace('n','N'); // returns a string
+        console.log(str3);
+
+        // adding a new property
+        str2.age = 45;
+        console.log(str2);
+
+        // arrays in js
+        array = ['s','a','c','h','i','n'];
+        array[3] = 'H';
+        console.log(array);
+
+    </script>
+    
+</body>
+</html>
