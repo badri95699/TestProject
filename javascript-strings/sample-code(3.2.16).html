@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
 
@@ -12,7 +14,7 @@
 
         // primitive string
         str = "Sachin";
-        str[3] ='H';
+        str[3] = 'H';
         console.log(str);
         console.log(typeof str);
         console.log(str.length);
@@ -26,8 +28,8 @@
         str2 = new String("dhoni");
         console.log(str2);
         console.log(typeof str2);
-        
-        str3 = str2.replace('n','N'); // returns a string
+
+        str3 = str2.replace('n', 'N'); // returns a string
         console.log(str3);
 
         // adding a new property
@@ -35,11 +37,41 @@
         console.log(str2);
 
         // arrays in js
-        array = ['s','a','c','h','i','n'];
+        array = ['s', 'a', 'c', 'h', 'i', 'n'];
         array[3] = 'H';
         console.log(array);
 
+
+        // ask for input -->
+        // age = prompt("Enter the age : ");
+        //  age = 35;
+        // username = "sachin";
+
+        // print on the document -->
+        // document.writeln("Hiee "+ username + " " + "Your age is " + age + "<br>");
+        // document.writeln('Hiee '+ username + ' ' + 'Your age is ' + age + "<br>");
+        // document.writeln(`Hiee ${username}, Your age is ${age}, Status : ${age > 18 ? "Adult" : "Minor"}`);
+
+        label = prompt("Enter the label");
+        username = prompt("Enter the username");
+        inputInfo = prompt("Enter the type of input");
+        buttonInfo = prompt("Enter the value of button");
+
+        htmlPage = `<h2> ${label} </h2>
+                     <dl>
+                     <dt> ${username}</dt>
+                     <dd> 
+                        <input type = "${inputInfo}"></input>
+                     </dd>
+                     </dl> 
+                     <button>
+                        ${buttonInfo}
+                     </button> `
+
+        document.write(htmlPage);
+
     </script>
-    
+
 </body>
+
 </html>
