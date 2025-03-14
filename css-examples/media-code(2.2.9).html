@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css" media="screen">
+        .container {
+            border: 2px solid;
+            padding: 10px;
+            width: 300px;
+            background-color: rgb(240, 240, 180);
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            gap: 5px;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+    <style type="text/css">
+        @media print {
+            .container {
+                border: 2px solid;
+                padding: 10px;
+                width: 150px;
+                background-color: rgb(240, 240, 180);
+            }
+
+            dl {
+                display: grid;
+                grid-template-columns: 12fr;
+                gap: 5px;
+            }
+
+            dt {
+                font-weight: bold;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            img,
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/public/images/car-image.jpeg" alt="" width="300px">
+        <h3>Ticket</h3>
+        <dl>
+            <dt>Departure</dt>
+            <dd>31/10/25</dd>
+            <dt>Time</dt>
+            <dd>13:45</dd>
+        </dl>
+        <button type="print">
+            Print Ticket
+        </button>
+
+    </div>
+</body>
+
+</html>
