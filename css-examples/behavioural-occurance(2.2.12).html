@@ -19,6 +19,19 @@
         li:last-child::after{
             content: " ";
         }
+        input::placeholder{
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: yellow;
+            border: 2px solid;
+            padding: 5px;
+        }
+        p::selection{
+            background-color: yellow;
+            color: red;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -32,5 +45,9 @@
         <li>Express.js</li>
         <li>MongoDB</li>
     </ol>
+    <hr>
+    <input type="text" placeholder="Enter some text">
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo fugit, laboriosam consequuntur ad alias temporibus at ex dolorum error, recusandae aspernatur voluptatibus quis! Laudantium necessitatibus quo earum pariatur laborum autem!</p>
 </body>
 </html>
