@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        :root{
+            --oh-yea:red;
+        }
+        .darkTheme{
+            background-color: var(--oh-yea);
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Change Theme
+    </button>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    document.querySelector("button").addEventListener("click",function(){
+
+        bodyElement = document.querySelector("body");
+
+        classAttribute = bodyElement.classList;
+
+        if(classAttribute.contains("darkTheme")){
+            classAttribute.remove("darkTheme");
+            this.textContent="Change to Red Theme";
+        }
+        else{
+            classAttribute.add("darkTheme");
+            this.textContent="Change to Light Theme";
+        }
+
+        
+    })
+</script>
