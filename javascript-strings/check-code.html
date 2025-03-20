@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let arr1 = [];
+        arr1[3] = "sachin";
+        console.log(arr1); // (empty*3 , sachin) empty ~ undefined
+
+        let arr2 = ['sachin','saurav','dhoni','kohli','dravid'];
+        console.log(arr2[arr2[5]]); // undefined
+        console.log(arr2[-1]); // undefined
+         
+        let names = ['sachin',true,'saurav',false,3.5]; //heterogeneous elements
+        console.log(names.length); //5
+        console.log(names);
+        names.length=2;
+        console.log(names);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

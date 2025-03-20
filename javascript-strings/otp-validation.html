@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success{
+            color: green;
+        }
+        .failure{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Enter OTP</dt>
+        <dd>
+            <input type="text" size="4" id="otpText" onblur="validateOTP()" name="textInput">
+        </dd>
+    </dl>
+    <p id="info">
+
+    </p>
+    <script type="text/javascript">
+        function validateOTP(){
+            
+            // Target the element
+            let otp = document.getElementById("otpText");
+            let info = document.getElementById("info");
+
+            otpResult = otp.value;
+            console.log(otpResult);
+
+            condition = otpResult ==="3456";
+            if (condition) {
+                console.log("success");
+                info.innerHTML="Success".fontcolor("green").fontsize(20).bold().italics();
+                // info.className="success";
+            } else {
+                console.log("faliure");
+                info.textContent="Failure";
+                info.className="failure"
+            }
+        }
+    </script>
+</body>
+</html>
