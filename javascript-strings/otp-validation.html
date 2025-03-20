@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .success{
-            color: green;
-        }
-        .failure{
-            color: red;
-        }
-    </style>
 </head>
+
 <body>
     <dl>
         <dt>Enter OTP</dt>
@@ -24,8 +18,8 @@
 
     </p>
     <script type="text/javascript">
-        function validateOTP(){
-            
+        function validateOTP() {
+
             // Target the element
             let otp = document.getElementById("otpText");
             let info = document.getElementById("info");
@@ -33,17 +27,14 @@
             otpResult = otp.value;
             console.log(otpResult);
 
-            condition = otpResult ==="3456";
+            condition = otpResult === "3456";
             if (condition) {
-                console.log("success");
-                info.innerHTML="Success".fontcolor("green").fontsize(20).bold().italics();
-                // info.className="success";
+                info.innerHTML = "Success".fontcolor("green").fontsize(20).bold().italics();
             } else {
-                console.log("faliure");
-                info.textContent="Failure";
-                info.className="failure"
+                info.innerHTML = "Failure".fontcolor("red").fontsize(20).bold().italics();
             }
         }
     </script>
 </body>
+
 </html>
